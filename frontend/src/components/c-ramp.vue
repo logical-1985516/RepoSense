@@ -228,7 +228,7 @@ export default defineComponent({
           ? (new Date(this.sdate)).getTime()
           : (new Date(slice.date)).getTime();
 
-      return (timeMs / window.DAY_IN_MS) % 5;
+      return (timeMs / window.DAY_IN_MS) % 7;
     },
 
     // Prevent browser from switching to new tab when clicking ramp
@@ -272,23 +272,31 @@ export default defineComponent({
     width: 0;
 
     &--color0 {
-      border-bottom: $height rgba(mui-color('orange'), .5) solid;
-    }
-
-    &--color1 {
-      border-bottom: $height rgba(mui-color('light-blue'), .5) solid;
-    }
-
-    &--color2 {
       border-bottom: $height rgba(mui-color('green'), .5) solid;
     }
 
-    &--color3 {
+    &--color1 {
+      border-bottom: $height rgba(mui-color('blue'), .5) solid;
+    }
+
+    &--color2 {
       border-bottom: $height rgba(mui-color('indigo'), .5) solid;
     }
 
+    &--color3 {
+      border-bottom: $height rgba(mui-color('purple'), .5) solid;
+    }
+
     &--color4 {
-      border-bottom: $height rgba(mui-color('pink'), .5) solid;
+      border-bottom: $height rgba(mui-color('brown'), .5) solid;
+    }
+
+    &--color5 {
+      border-bottom: $height rgba(mui-color('orange'), .5) solid;
+    }
+
+    &--color6 {
+      border-bottom: $height rgba(mui-color('lime'), .5) solid;
     }
 
     &--color-deletes {
