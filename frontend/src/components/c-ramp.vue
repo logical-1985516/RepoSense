@@ -224,11 +224,7 @@ export default defineComponent({
       if (this.isDeletesContribution(slice)) {
         return '-deletes';
       }
-      const timeMs = this.fromramp
-          ? (new Date(this.sdate)).getTime()
-          : (new Date(slice.date)).getTime();
-
-      return (timeMs / window.DAY_IN_MS) % 5;
+      return 0;
     },
 
     // Prevent browser from switching to new tab when clicking ramp
